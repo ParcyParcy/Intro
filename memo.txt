@@ -124,3 +124,4 @@ pass:いつもの
 
 ・この時点ではserver error(500)が出るので以下サイト参考
 https://yaruki-strong-zero.hatenablog.jp/entry/2018/05/27/fix_django_heroku_debug_false_servererror500/
+⇨でも無理だった
