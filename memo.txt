@@ -117,3 +117,10 @@ git push heroku master
 heroku ps:scale web=1
 heroku run python manage.py migrate
 heroku run python manage.py createsuperuser
+ここでのスーパーユーザー
+user:parcy
+mail:parcy_drum@yahoo.co.jp
+pass:いつもの
+
+・この時点ではserver error(500)が出るので以下サイト参考
+https://yaruki-strong-zero.hatenablog.jp/entry/2018/05/27/fix_django_heroku_debug_false_servererror500/
