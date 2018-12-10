@@ -135,6 +135,7 @@ MEDIA_URL = "/postimg/"
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 import dj_database_url
+DATABASES = {}
 DATABASES['default'] = dj_database_url.config()
 
 
