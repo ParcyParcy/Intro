@@ -1,0 +1,28 @@
+{% extends "posts/base.html" %}
+{% load static %}
+{% block content %}
+
+	<div id="wrapper">
+		<section id="main">
+			<section class="content">
+				<h3 class="heading">ブログ一覧</h3>
+                    <article class="post">
+
+                        {% for post in posts.all %}
+                            <h3><a href = "{% url 'post_detail' post.id %}" >{{ post.title }}</a></h3>
+                            <p class="dateLabel">{{ post.published }}</p>
+                            {% if post.image %}
+                                <img src="{{ post.image.url }}" width="450" height="200"/>
+                            {% endif %}<br />
+                            {{ post.summary | linebreaksbr }}
+                            <br /><br />
+                        {% endfor %}
+
+                    </article>
+
+            </section>
+        </section>
+    </div>
+
+
+{% endblock %}

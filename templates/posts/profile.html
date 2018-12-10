@@ -1,0 +1,67 @@
+{% extends "posts/base.html" %}
+{% load static %}
+{% block content %}
+
+
+	<div id="wrapper">
+		<section id="main">
+			<section class="content">
+				<h3 class="heading">プロフィール</h3>
+				<article class="post">
+					<h3>経歴</h3>
+					<p><img src="{% static 'posts/image/keireki.jpg' %}" alt="keireki" width="260" height="113" class="alignright"/>
+                        1997年1月　　埼玉県で生まれ、物心着く前に東京都北区赤羽へ引っ越す<br>
+                        2015年3月　　品川区の私立の高校を卒業し、受験結果に納得せず１年間の浪人<br>
+                        2016年4月　　東京理科大学経営学部ビジネスエコノミクス学科へ<br>
+                        2018年10月　 エンジニア職の長期インターンを始めつつ就職活動中←いまここ<br>
+                        <br>
+                        元々はたくさんお金を触りたいと思って金融業界を志望していましたが、
+                        ビッグデータやAIが騒いだ時代でもあったのでデータ分析に興味が出てきて、時代の最先端で働くことに憧れました笑　
+                        そんなときに理科大で金融工学などのファイナンスも学べて、データ分析も学べる学科が自分の受験する年に新設されたので今の大学に決めました。<br>
+                        <br>
+                        長期インターンを始めた理由はプログラミングの実務経験が欲しかったからで、父がエンジニアということもあってプログラミングの勉強はちょこちょこしてました。
+                        でも、実際にものづくりをしたことがなくただ勉強してただけだったので友人から誘われたのをきっかけに始めてみました。
+                    </p><br clear="all" />
+
+					<h3>趣味とか</h3>
+                    <div class=""boxContainar>
+                        <div class="box"><img src="{% static 'posts/image/skate.jpg' %}" alt="skate" width="450" height="200" /></div>
+                        <div class="box"><img src="{% static 'posts/image/night.jpg' %}" alt="night" width="450" height="200" /></div>
+                    </div>
+                    <ul type="circle" >
+                        <li>[趣味・特技]</li>
+                            <ul type="disc">
+                                <li>音楽を聞くこと(ジャンルはなんでも！)</li>
+                                <li>Youtube</li>
+                                <li>スマホ鑑賞</li>
+                                <li>ドラム（たまに）</li>
+                                <li>インラインスケート（たまに）</li>
+                                <li>旅行（お金があったら）</li>
+                                <li>深夜徘徊</li>
+                                <li>ドローン（ちょっときになる）</li>
+                            </ul><br>
+                        <li>[好きなもの]</li>
+                            <ul type="disc">
+                                <li>食べもの（食えないものはない！！）</li>
+                                <li>お金</li>
+                            </ul><br>
+                        <li>[嫌いなもの]</li>
+                            <ul type="disc">
+                                <li>虫</li>
+                                <li>朝</li>
+                            </ul><br>
+                    </ul>
+                    </p><br clear="all" />
+
+					<h3>つくったもの</h3>
+					<p>ここでは、自分がプログラミングとかで作ったものとか紹介します。今はまだこのページ入れて２つしか作ってないけど、これから増えたらいいなぁ...</p><br>
+                    <p>●foliumを使った地図情報プロットWebアプリ（デモ用）</p>
+					<blockquote><p>Pythonの地図ライブラリ「folium」を使ってGPSセンサと連動して動くWebアプリです。リアルタイムでGPSと通信してプロットするものを作ることが目標でしたが、知識が及ばずログデータを表示するところまでしかできませんでした。IoTをやるならプログラミングだけじゃだめということを強く実感しました。ただ、ネットワークの知識や他のプログラミング言語を学んだすごいいい機会でした。ネットワークに関する知識がもっと増えたらまたやってみたいです</p></blockquote>
+					<p>●自作ホームページ</p>
+                    <blockquote><p>このホームページです。テンプレ使ったから自作っていうのもどうかと思うけどこれから変えていくつもりです笑　
+				</article>
+
+			</section>
+		</section>
+    </div>
+{% endblock %}

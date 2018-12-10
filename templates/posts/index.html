@@ -1,0 +1,43 @@
+{% extends "posts/base.html" %}
+{% load static %}
+
+{% block content %}
+    <div id="mainBanner">
+        <div class="inner">
+            <img src="{% static 'posts/image/header.jpg' %}" width="940" height="300" alt="parcyのサイト">
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <section class="gridWrapper">
+            <article class="grid">
+                <div class="box">
+                    <h3>プロフィール</h3>
+                    <p class="img"><img width="300" height="220" src="{% static 'posts/image/me.jpg' %}" alt="profile" /></p>
+                    <p class="readmore"><a href="{% url 'posts:profile' %}">もっと見る</a></p>
+                </div>
+            </article>
+            <article class="grid">
+                <div class="box">
+                    <h3>ブログ</h3>
+                    <p class="img"><img width="300" height="220" src="{% static 'posts/image/blog.jpg' %}" alt="blog" /></p>
+                    <p class="readmore"><a href="{% url 'posts:post_list' %}">もっと見る</a></p>
+                </div>
+            </article>
+            <article class="grid">
+                <div class="box">
+                    <h3>連絡先</h3>
+                    <p class="img"><img width="300" height="220" src="{% static 'posts/image/contact.jpg' %}" alt="contact" /></p>
+                    <p class="readmore"><a href="{% url 'posts:contact' %}">もっと見る</a></p>
+                </div>
+            </article>
+        </section>
+        <section id="post-221" class="content">
+            <h3 class="heading">どんなページ？</h3>
+            <article class="post">
+                <p><img src="{% static 'posts/image/bigdata.jpg' %}" alt="dokodoko" width="260" height="113" class="alignright" />長期インターン先で自分の紹介ページをDjangoで作ってみようということでやってみました。今後はブログでプログラミングとか就活のこととか書こうと思ってます。ちなみにホームページはテンプレートを拾ってきてDjango用に改変しています。デザインはほとんどもとのテンプレのままなのでそのうちCSSGeneratorとか使って変えていきたいですね。</p>
+            </article>
+        </section>
+    </div>
+
+{% endblock %}

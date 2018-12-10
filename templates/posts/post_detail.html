@@ -1,0 +1,28 @@
+{% extends "posts/base.html" %}
+{% load static %}
+{% block content %}
+
+	<div id="wrapper">
+		<section id="main">
+			<section class="content">
+				<h3 class="heading">ブログ詳細</h3>
+                    <article class="post">
+
+                        <h3>{{ post.title }}</a></h3>
+                            {{ post.published }}
+                            {% if post.image %}
+                                <img src="{{ post.image.url }}"/>
+                            {% endif %}
+                            <br /><br />
+                            {{ post.body | linebreaksbr }}
+                            <br /><br /><br /><br />
+                        <h4><a href="{% url 'posts:post_list' %}">記事一覧に戻る</a></h4>
+
+                    </article>
+            </section>
+        </section>
+    </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,86 @@
+[このサイトを参考に作っていく]
+https://qiita.com/TsubasaTakagi/items/59b4eef258acb64cc113#_reference-cfaaaf44b64252b5e014
+
+[同じディレクトリ階層（"."は同じ階層を表す）の中のviews.pyというファイルを読み込む]
+from . import views
+
+[makemigrationsするときに"posts.Post.image"のために以下コマンドでインストールした]
+pip install Pillow
+（そのあとにPycharmでもプロジェクタインタプリターでインストールした）
+
+[admin情報]
+user:parcy
+mailaddress:admin@admin.com
+pass:いつもの
+
+[画像を読み込む方法]
+・プロジェクトのurls.pyに以下代入
+from django.conf.urls.static import static
+from django.conf import settings
+
+・urlpatternの末尾に以下代入
+ + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+・setting.pyに以下代入
+MEDIA_ROOT = os.path.join(BASE_DIR, 'postimg')
+MEDIA_URL = "/postimg/"
+
+・モデルの画像のとこ（adminで投稿した画像が格納される場所）
+image = models.ImageField(upload_to='postimg/')
+こうするとプロジェクト直下にpostingディレクトリができて、そのさらに下にpostingディレクトリができて、その下に画像が保存される
+
+・index.htmlでの画像表示の仕方
+<img src="{{ post.image.url }}"/>
+
+以上でadminで追加した画像は表示される
+
+
+[現在の投稿のページ番号]
+test1...27
+test2...28
+test3...29
+
+[css読み込みの成功]
+・参考サイト
+http://a-zero.hatenablog.com/entry/python_django_3
+
+・settingに以下のコマンドでstatic等の設定
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+     os.path.join(BASE_DIR, 'static'),
+)
+
+・base.htmlでロードする
+{% load static %}
+
+・以下でCSSを読み込む
+<link rel="stylesheet" type="text/css" media="all" href="{% static 'posts/css/style.css' %}">
+
+
+[以下のやつは一番上で作ったやつ（モデルを使った記事一覧表示に使える）⇨　post_listで使用済み（途中でif文を入れて使う）]
+        <h1>ようこそ、Tsubasaのブログへ！</h1>
+
+        <h2>最新の投稿</h2>
+
+        {% for post in posts.all %}
+            <a href = "{% url 'post_detail' post.id %}" >{{ post.title }}</a>
+            <br /><br />
+            {{ post.published }}
+            <img src="{{ post.image.url }}"/>
+            <br /><br />
+            {{ post.summary }}
+            <br /><br />
+        {% endfor %}
+
+[ブログの記事のところでよく使うとされるフィルタ]
+使い方
+{{ post.body | ●●●●●●●●● }}
+●●●●●●●●●のところにフィルタを入れていく
+フィルタ一覧
+・urlを記事に入れたらリンクにするやつ
+urlize
+・記事内の改行を反映させる（改行を<br />にしてくれる）
+linebreaksbr
+
+[記事用に作った捨てgoogleアカ]
+parcy0114parcy@gmail.com
