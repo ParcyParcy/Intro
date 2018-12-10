@@ -137,7 +137,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 #herokuへのデプロイ用の設定（上のDEBUGはコメントアウト済み）
 
-DEBUG = False
+DEBUG = True
 
 try:
     from .local_settings import *
