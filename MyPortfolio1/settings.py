@@ -132,7 +132,11 @@ MEDIA_URL = "/postimg/"
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+import dj_database_url
+DATABASES['default'] = dj_database_url.config()
+
 
 #herokuへのデプロイ用の設定（上のDEBUGはコメントアウト済み）
 
