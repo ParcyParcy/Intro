@@ -88,6 +88,7 @@ parcy0114parcy@gmail.com
 [herokuへのデプロイまでの流れ]
 基本的には下記のサイトの流れで作る
 https://qiita.com/okoppe8/items/76cdb202eb15aab566d1
+http://engineernote.hatenablog.com/entry/2016/11/04/144101
 
 ・これだけは終わらせておく
 プロジェクトの作成
