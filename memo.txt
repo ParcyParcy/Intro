@@ -84,3 +84,29 @@ linebreaksbr
 
 [記事用に作った捨てgoogleアカ]
 parcy0114parcy@gmail.com
+
+[herokuへのデプロイまでの流れ]
+基本的には下記のサイトの流れで作る
+https://qiita.com/okoppe8/items/76cdb202eb15aab566d1
+
+・これだけは終わらせておく
+プロジェクトの作成
+Herokuアカウントの作成
+Heroku toolbelt（Git + ssh含む）のインストール
+
+・以下４つをプロジェクト直下に
+runtime.txt...pythonのversion
+Procfile...herokuの起動コマンド
+requirements.txt...pip freezeで勝手に作られる
+.gitignore...Git管理除外リスト
+
+・githubへpush
+git init
+git add -A .
+git commit -m "commit message"
+git remote add origin https://github.com/ParcyParcy/Intro.git
+git push -u origin master
+
+・herokuへデプロイ
+heroku create parcyintro
+heroku ps:scale web=1
