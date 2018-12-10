@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4f38358-34a1-40d2-be65-ee19d199057b" name="Default Changelist" comment="" />
+    <list default="true" id="b4f38358-34a1-40d2-be65-ee19d199057b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/MyPortfolio1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MyPortfolio1/settings.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +43,7 @@
           <entry key="css" value="92" />
           <entry key="gitignore" value="33" />
           <entry key="html" value="1254" />
-          <entry key="py" value="931" />
+          <entry key="py" value="935" />
           <entry key="txt" value="1435" />
         </counts>
       </usages-collector>
@@ -50,7 +52,7 @@
           <entry key="CSS" value="92" />
           <entry key="HTML" value="1254" />
           <entry key="PLAIN_TEXT" value="1468" />
-          <entry key="Python" value="931" />
+          <entry key="Python" value="935" />
         </counts>
       </usages-collector>
     </session>
@@ -84,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyPortfolio1/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1621">
-              <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
+            <state relative-caret-position="209">
+              <caret line="134" column="2" selection-start-line="134" selection-start-column="2" selection-end-line="134" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -111,7 +113,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/memo.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="463">
@@ -295,6 +297,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -486,17 +489,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyPortfolio1/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1621">
-          <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/memo.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
           <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyPortfolio1/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="134" column="2" selection-start-line="134" selection-start-column="2" selection-end-line="134" selection-end-column="2" />
         </state>
       </provider>
     </entry>
